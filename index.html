@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>formulario</title>
+</head>
+<body>
+    <form class="formulario">
+        <h1 class="formularioTitulo">Contáctenos</h1>
+
+        <input type="text" id="nombre" class="formularioInput">
+        <label for="nombre" class="formularioLabel">Nombre</label>
+
+        <input type="text" id="apellido" class="formularioInput">
+        <label for="apellido" class="formularioLabel">Apellido</label>
+
+        <input type="email" id="correo" class="formularioInput">
+        <label for="correo" class="formularioLabel">Correo</label>
+
+        <input type="email" id="vcorreo" class="formularioInput">
+        <label for="vcorreo" class="formularioLabel">Verificar Correo</label>
+
+        <input type="tel" id="tel" class="formularioInput">
+        <label for="tel" class="formularioLabel">Telefono</label>
+
+        <input type="date" id="fnacimiento" class="formularioInput">
+        <label for="fnacimiento" class="formularioNacimiento">Fecha de nacimiento</label>
+
+        <input type="text" id="direccion" class="formularioInput">
+        <label for="direccion" class="formularioLabel">Direccion</label>
+
+        <input type="text" id="ciudad" class="formularioInput">
+        <label for="ciudad" class="formularioLabel">Ciudad</label>
+
+        <input type="number" id="cpostal" class="formularioInput">
+        <label for="cpostal" class="formularioLabel">Codigo Postal</label>
+
+        <input type="text" id="mensaje" class="formularioInput">
+        <label for="mensaje" class="formularioLabel">Mensaje</label>
+
+        <input type="submit" class="formularioSubmit" value="Enviar" onclick="return enviarFormulario(); validarEmail();">
+    </form>
+    <div id="error"></div>
+    <script src="main.js"></script>
+</body>
+</html>
